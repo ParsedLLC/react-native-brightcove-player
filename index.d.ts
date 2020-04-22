@@ -6,8 +6,6 @@ type VideoToken = string;
 export type BrightcovePlayerProps = {
   policyKey?: string;
   accountId?: string;
-  playerId?: string;
-  playerType?: string;
   referenceId?: string;
   videoId?: string;
   videoToken?: VideoToken;
@@ -22,17 +20,11 @@ export type BrightcovePlayerProps = {
   onPlay?: () => void;
   onPause?: () => void;
   onEnd?: () => void;
-  onProgress?: ({ currentTime: number, duration: number }) => void;
+  onProgress?: ({ currentTime: number }) => void;
   onChangeDuration?: ({ duration: number }) => void;
   onUpdateBufferProgress?: ({ bufferProgress: number }) => void;
-  onBufferingStarted?: () => void;
-  onBufferingCompleted?: () => void;
-  onBeforeEnterFullscreen?: () => void;
-  onBeforeExitFullscreen?: () => void;
   onEnterFullscreen?: () => void;
   onExitFullscreen?: () => void;
-  onError?: () => void;
-  onNetworkConnectivityChange?: () => void;
   style?: ViewStyle;
 };
 
@@ -41,7 +33,6 @@ export class BrightcovePlayer extends React.Component<
   {}
 > {
   seekTo(position: number): {};
-  setFullscreen(fullscreen: boolean): {};
 }
 
 export type BrightcovePlayerPosterProps = {

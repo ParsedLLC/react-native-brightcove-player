@@ -1,6 +1,6 @@
 {
   "name": "react-native-brightcove-player",
-  "version": "1.6.5",
+  "version": "1.7.0",
   "description": "A React Native implementation of Brightcove Player SDK.",
   "main": "index.js",
   "repository": {
@@ -21,7 +21,6 @@
   "license": "MIT",
   "homepage": "https://github.com/manse/react-native-brightcove-player",
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "react-native-orientation": "^3.1.3"
+    "prop-types": "^15.5.10"
   }
 }
